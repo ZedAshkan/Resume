@@ -1,0 +1,128 @@
+@import "reset";
+
+@font-face{
+    font-family: NotoSansArabic;
+    src: url('../fonts/NotoSansArabic-CondensedSemiBold.ttf');
+}
+
+@font-face{
+    font-family: NotoSans;
+    src: url('../fonts/NotoSans-CondensedBold.ttf');
+}
+
+body{
+    background-color: #212b46;
+    color: #fff;
+    font-family: NotoSansArabic ;
+    font-size: 1.2em;
+}
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#social{
+    margin-left: 30px;
+direction: ltr;
+height: 60px;
+display: flex;
+align-items: flex-end;
+ a{
+     margin: 5px;
+    img {
+    width: 40px;
+    height: 40px;
+    }
+ }
+
+}
+
+#hbox{
+    background-color: #1d243e;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    margin-bottom: 30px;
+    #righthead{
+        display: flex;
+    align-items: center;
+
+        h1{
+            display: flex;
+            color: #ffcc00;
+            flex-direction: column;
+            margin-right :20px;
+            #fname{
+                font-size: 3.5em;
+            }
+            #lname{
+                font-size: 2em;
+            }
+        }
+        #avatar{
+    
+            margin-right: 30px;
+            border-radius: 50%;
+            background: url("imgs/ZedAshkan.png") no-repeat center center;
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            display: inline-block;
+            border: solid #3d82d6 5px ;
+            
+        }
+    }
+}
+#lefthead{
+    display: flex;
+    margin: 10px;
+    margin-left: 60px;
+}
+.list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+#skills{
+    background-color: #1d243e;
+    border-radius: 20px;
+    display: flex;
+}
+
+#programSkills {
+    width: 50%;
+
+    h2{
+        display: inline-block;
+    background-color: #212b46;
+    color: #aa89f9;
+font-size: 1.2em;
+    padding: 15px 70px;
+    border-radius: 20px 0 0 20px ;
+    margin: 30px 0;
+}
+}
+
+#designSkills{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    h2{
+        display: inline-block;
+    background-color: #212b46;
+    color: #aa89f9;
+font-size: 1.2em;
+    padding: 15px 70px;
+    border-radius: 0 20px 20px 0 ;
+    margin: 30px 0;
+    }
+}
+
+.en-font{
+    font-family: NotoSans;
+}
