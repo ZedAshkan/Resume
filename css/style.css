@@ -215,12 +215,12 @@ a {
 
 @font-face {
   font-family: NotoSansArabic;
-  src: url("../fonts/NotoSansArabic-CondensedSemiBold.ttf");
+  src: url("../css/fonts/NotoSansArabic-CondensedSemiBold.ttf");
 }
 
 @font-face {
   font-family: NotoSans;
-  src: url("../fonts/NotoSans-CondensedBold.ttf");
+  src: url("../css/fonts/NotoSans-CondensedBold.ttf");
 }
 
 body {
@@ -270,12 +270,8 @@ body {
 }
 
 #hbox #righthead {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #hbox #righthead h1 {
@@ -283,10 +279,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: #ffcc00;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-right: 20px;
 }
 
@@ -301,7 +294,7 @@ body {
 #hbox #righthead #avatar {
   margin-right: 30px;
   border-radius: 50%;
-  background: url("../imgs/ZedAshkan.png") no-repeat center center;
+  background: url("imgs/ZedAshkan.png") no-repeat center center;
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -331,11 +324,13 @@ body {
   margin-left: 30px;
 }
 
-#skills {
+#main{
   background-color: #1d243e;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100%;
+}
+
+#skills {
   display: flex;
 }
 
@@ -353,14 +348,32 @@ body {
   margin: 30px 0;
 }
 
+.comname{
+  color: #7e42fa;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+.comment{
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.comment p{
+  font-size: 0.8em;
+  margin-right: 30px;
+  padding: 10px;
+  line-height: 1.5em;
+}
+.project{
+  color: #a9afc5;
+
+}
+.prjdate{
+  font-size: .8em;
+}
+
 #designSkills {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  direction: ltr;
 }
 
 #designSkills h2 {
@@ -371,6 +384,90 @@ body {
   padding: 15px 70px;
   border-radius: 0 20px 20px 0;
   margin: 30px 0;
+}
+
+#progressbar{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.progress{
+	height:18px;
+	background-color:#f7f7f7;
+	border-radius:4px;
+  margin-top: 5px;
+	margin-bottom:40px;
+}
+
+.progress .bar{
+	height:18px;
+	border-radius:4px;
+  text-align: center;
+  font-size: .9em;
+}
+
+#boxtitle{
+  margin: 40px;
+  font-size: 1.2em;
+}
+
+#nbox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d243e;
+  border-radius: 30px;
+}
+
+.obox{
+  height: 500px;
+  width: 100%;
+  display: flex;
+
+  justify-content:space-around;
+  margin: 50px 0 ;
+}
+
+.abox{
+  border: solid 5px #a9afc5;
+  border-radius: 30px;
+  margin: 0 2%;
+  width: 30%;
+  height: 500px;
+  background-color: #212b46;
+}
+
+.abox img{
+  width: 100%;
+  border-radius: 30px 30px 0 0 ;
+}
+
+.abox div{
+  margin: 20px;
+  color: #a9afc5;
+}
+
+.abox p{
+  margin: 10px;
+  line-height: 1.5em;
+  font-size: .8em;
+}
+
+#bottemfix{
+  height: 30px;
+}
+
+
+.unactive{
+  display:none;
+}
+
+footer{
+  height: 200px;
+  margin: 30px 30px 0 30px;
+  background-color: #1d243e;
+  border-radius: 30px 30px 0 0;
+  text-align: center;
 }
 
 .en-font {
