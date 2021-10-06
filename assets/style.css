@@ -1,4 +1,10 @@
 body{
   font-family: 'Noto Sans Arabic', sans-serif;
   font-weight: normal;
+  background-color: #212b46;
+}
+
+.socials-icon-size{
+  width: 40px;
+  height: 40px;
 }
